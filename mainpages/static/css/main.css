@@ -1,0 +1,244 @@
+.body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+
+}
+
+header h1{
+    font-size: 24px;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    background-color: white; /* Set a background color to avoid transparency issues */
+    padding: 10px 20px 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navlist{
+    display: flex;
+    list-style: none;
+}
+
+.navlist li{
+    margin-right: 20px;
+}
+
+.navlist li:last-child{
+    margin-right: 0;
+}
+
+.navlist li a{
+    text-decoration: none;
+    color: black;    
+}
+
+.nav .btn-order{
+    margin-left: auto;
+}
+.rightnav{
+    text-align: right;
+}
+
+.btn-order{
+    padding: 8px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-order:hover{
+    color: darkred;
+}
+
+
+.home-hero{
+    padding: 30px 30px 10px 30px;
+    margin: auto;
+}
+
+.form-container{
+    max-width: 400px;
+    max-height: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group select, .form-group input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[read-only]{
+    background-color: #f9f9f9;
+}
+
+.submit-btn{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    color: darkred;
+}
+
+.float-right{
+    float: right;
+}
+
+.btn-blog{
+    display: inline-block;
+    padding: 10px 60px;
+    border-radius:  5px;
+    border: 1px solid red;
+    background-color: transparent;
+    color: red;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main{
+    padding: 30px 50px 30px 30px;
+    margin:  30px 50px 30px 30px;
+}
+
+#blog{
+    padding: 20px 20px 20px 20px;
+    background-color: #eeeeee;
+}
+
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#card{
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#cards{
+    height: 200px;
+}
+
+
+/* Footer */
+footer{
+    border-top: white 1px solid;
+    margin-top: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+footer .container-fluid{
+    max-width: 1200px;
+    text-align: left;
+    padding: 20px;
+}
+
+footer .container-fluid h2{
+    font-family: "Galada", cursive;
+    font-size: 1.5em;
+    color: white;
+}
+
+footer .container-fluid p{
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 30px;
+    font-family: "Lato", sans-serif;
+}
+
+footer .container-fluid-copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+/* CSS without a media query -- applies to all sizes unless overridden */
+h1{
+    font-size: 4em;
+}
+
+/* CSS adjustments for tablets */
+@media only sreen and (max-width: 1024px){
+    h1{
+        font-size: 1.8em;
+    }
+}
+
+
+/* CSS adjustments for smartphones */
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 1.5em;
+    }
+}
